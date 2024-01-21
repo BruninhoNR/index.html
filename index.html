@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarBucks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="fundo"></div>
+
+    <img src="./img/logo.png" alt="logo starbucks" class="logo">
+
+    <div class="conteudo">
+        <div class="caixa-texto">
+
+            <h2>Não é apanas café, é um <span>StarBucks</span></h2>
+            <p>Não há nada como um bom café, bem quente e bem forte, e um grupo de amigos reunidos em volta da mesa do
+                Starbucks logo cedo. O café, que já é gostoso, fica melhor ainda. Nesses momentos:)
+            </p>
+            <a href="https://www.youtube.com/@RodolfoMori "target="_blank"><button>Se inscreve ai</button></a>
+        </div>
+        <div class="caixa-imagem">
+
+            <img src="./img/img1.png" alt="copão" class="copao">
+        </div>
+    </div>
+    <div class="menu">
+        <img src="./img/img-pequena1.png" alt="" class="mini-p verde">
+        <img src="./img/img-pequena2.png" alt="" class="mini-q amarelo">
+        <img src="./img/img-pequena3.png" alt="" class="mini-r rosa">
+    </div>
+
+
+
+    
+</body>
+
+<script>
+    let circulo = document.querySelector(".fundo")
+
+    let imgCopao = document.querySelector(".copao")
+    let verde = document.querySelector(".verde")
+    let rosa = document.querySelector(".rosa")
+    let amarelo = document.querySelector(".amarelo")
+
+    verde.addEventListener('click', () => {
+        imgCopao.src = "./img/img1.png"
+        circulo.style.background = "#006400"
+
+    });
+
+
+
+    amarelo.addEventListener('click', () => {
+        imgCopao.src = "./img/img2.png"
+        circulo.style.background = "#FFC0CB"
+
+    });
+
+    rosa.addEventListener('click', () => {
+        imgCopao.src = "./img/img3.png"
+        circulo.style.background = "#d752b1"
+
+    });
+
+
+
+
+
+</script>
+
+</html>
